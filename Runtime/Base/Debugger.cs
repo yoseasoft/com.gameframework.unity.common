@@ -21,6 +21,9 @@
 /// THE SOFTWARE.
 /// -------------------------------------------------------------------------------
 
+using System;
+using System.Runtime.CompilerServices;
+
 namespace GameFramework
 {
     /// <summary>
@@ -32,6 +35,7 @@ namespace GameFramework
         /// 基于调试模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Log(object message)
         {
             GameEngine.Debugger.Log(message);
@@ -41,6 +45,7 @@ namespace GameFramework
         /// 基于调试模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Log(string message)
         {
             GameEngine.Debugger.Log(message);
@@ -51,6 +56,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">日志格式内容</param>
         /// <param name="args">日志格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Log(string format, params object[] args)
         {
             GameEngine.Debugger.Log(format, args);
@@ -60,6 +66,7 @@ namespace GameFramework
         /// 基于常规模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Info(object message)
         {
             GameEngine.Debugger.Info(message);
@@ -69,6 +76,7 @@ namespace GameFramework
         /// 基于常规模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Info(string message)
         {
             GameEngine.Debugger.Info(message);
@@ -79,6 +87,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">日志格式内容</param>
         /// <param name="args">日志格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Info(string format, params object[] args)
         {
             GameEngine.Debugger.Info(format, args);
@@ -88,6 +97,7 @@ namespace GameFramework
         /// 基于警告模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Warn(object message)
         {
             GameEngine.Debugger.Warn(message);
@@ -97,6 +107,7 @@ namespace GameFramework
         /// 基于警告模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Warn(string message)
         {
             GameEngine.Debugger.Warn(message);
@@ -107,6 +118,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">日志格式内容</param>
         /// <param name="args">日志格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Warn(string format, params object[] args)
         {
             GameEngine.Debugger.Warn(format, args);
@@ -116,6 +128,7 @@ namespace GameFramework
         /// 基于错误模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Error(object message)
         {
             GameEngine.Debugger.Error(message);
@@ -125,6 +138,7 @@ namespace GameFramework
         /// 基于错误模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Error(string message)
         {
             GameEngine.Debugger.Error(message);
@@ -135,6 +149,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">日志格式内容</param>
         /// <param name="args">日志格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Error(string format, params object[] args)
         {
             GameEngine.Debugger.Error(format, args);
@@ -144,6 +159,7 @@ namespace GameFramework
         /// 基于崩溃模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Fatal(object message)
         {
             GameEngine.Debugger.Fatal(message);
@@ -153,6 +169,7 @@ namespace GameFramework
         /// 基于崩溃模式下的日志输出接口
         /// </summary>
         /// <param name="message">日志内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Fatal(string message)
         {
             GameEngine.Debugger.Fatal(message);
@@ -163,6 +180,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">日志格式内容</param>
         /// <param name="args">日志格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Fatal(string format, params object[] args)
         {
             GameEngine.Debugger.Fatal(format, args);
@@ -174,6 +192,7 @@ namespace GameFramework
         /// 系统断言，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="condition">条件表达式</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Assert(bool condition)
         {
             GameEngine.Debugger.Assert(condition);
@@ -184,6 +203,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="message">消息内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Assert(bool condition, object message)
         {
             GameEngine.Debugger.Assert(condition, message);
@@ -194,6 +214,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="message">消息内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Assert(bool condition, string message)
         {
             GameEngine.Debugger.Assert(condition, message);
@@ -205,6 +226,7 @@ namespace GameFramework
         /// <param name="condition">条件表达式</param>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Assert(bool condition, string format, params object[] args)
         {
             GameEngine.Debugger.Assert(condition, format, args);
@@ -217,6 +239,7 @@ namespace GameFramework
         /// <summary>
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw()
         {
             GameEngine.Debugger.Throw();
@@ -226,6 +249,7 @@ namespace GameFramework
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="errorCode">错误码</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(int errorCode)
         {
             GameEngine.Debugger.Throw(errorCode);
@@ -235,6 +259,7 @@ namespace GameFramework
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="message">消息内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(string message)
         {
             GameEngine.Debugger.Throw(message);
@@ -245,6 +270,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(string format, params object[] args)
         {
             GameEngine.Debugger.Throw(format, args);
@@ -254,7 +280,8 @@ namespace GameFramework
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="exception">异常实例</param>
-        public static void Throw(System.Exception exception)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(Exception exception)
         {
             GameEngine.Debugger.Throw(exception);
         }
@@ -263,7 +290,8 @@ namespace GameFramework
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="type">异常类型</param>
-        public static void Throw(System.Type type)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(Type type)
         {
             GameEngine.Debugger.Throw(type);
         }
@@ -273,7 +301,8 @@ namespace GameFramework
         /// </summary>
         /// <param name="type">异常类型</param>
         /// <param name="message">消息内容</param>
-        public static void Throw(System.Type type, string message)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(Type type, string message)
         {
             GameEngine.Debugger.Throw(type, message);
         }
@@ -284,7 +313,8 @@ namespace GameFramework
         /// <param name="type">异常类型</param>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
-        public static void Throw(System.Type type, string format, params object[] args)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(Type type, string format, params object[] args)
         {
             GameEngine.Debugger.Throw(type, format, args);
         }
@@ -293,7 +323,8 @@ namespace GameFramework
         /// 系统异常，仅在调试模式下该函数有效
         /// </summary>
         /// <typeparam name="T">异常类型</typeparam>
-        public static void Throw<T>() where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>() where T : Exception
         {
             GameEngine.Debugger.Throw<T>();
         }
@@ -303,7 +334,8 @@ namespace GameFramework
         /// </summary>
         /// <typeparam name="T">异常类型</typeparam>
         /// <param name="message">消息内容</param>
-        public static void Throw<T>(string message) where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>(string message) where T : Exception
         {
             GameEngine.Debugger.Throw<T>(message);
         }
@@ -314,7 +346,8 @@ namespace GameFramework
         /// <typeparam name="T">异常类型</typeparam>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
-        public static void Throw<T>(string format, params object[] args) where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>(string format, params object[] args) where T : Exception
         {
             GameEngine.Debugger.Throw<T>(format, args);
         }
@@ -323,6 +356,7 @@ namespace GameFramework
         /// 对象条件判定的异常检查，仅在调试模式下该函数有效
         /// </summary>
         /// <param name="condition">条件表达式</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(bool condition)
         {
             GameEngine.Debugger.Throw(condition);
@@ -333,6 +367,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="errorCode">错误码</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(bool condition, int errorCode)
         {
             GameEngine.Debugger.Throw(condition, errorCode);
@@ -343,6 +378,7 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="message">消息内容</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(bool condition, string message)
         {
             GameEngine.Debugger.Throw(condition, message);
@@ -354,6 +390,7 @@ namespace GameFramework
         /// <param name="condition">条件表达式</param>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Throw(bool condition, string format, params object[] args)
         {
             GameEngine.Debugger.Throw(condition, format, args);
@@ -364,7 +401,8 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="exception">异常实例</param>
-        public static void Throw(bool condition, System.Exception exception)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(bool condition, Exception exception)
         {
             GameEngine.Debugger.Throw(condition, exception);
         }
@@ -374,7 +412,8 @@ namespace GameFramework
         /// </summary>
         /// <param name="condition">条件表达式</param>
         /// <param name="type">异常类型</param>
-        public static void Throw(bool condition, System.Type type)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(bool condition, Type type)
         {
             GameEngine.Debugger.Throw(condition, type);
         }
@@ -385,7 +424,8 @@ namespace GameFramework
         /// <param name="condition">条件表达式</param>
         /// <param name="type">异常类型</param>
         /// <param name="message">消息内容</param>
-        public static void Throw(bool condition, System.Type type, string message)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(bool condition, Type type, string message)
         {
             GameEngine.Debugger.Throw(condition, type, message);
         }
@@ -397,7 +437,8 @@ namespace GameFramework
         /// <param name="type">异常类型</param>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
-        public static void Throw(bool condition, System.Type type, string format, params object[] args)
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw(bool condition, Type type, string format, params object[] args)
         {
             GameEngine.Debugger.Throw(condition, type, format, args);
         }
@@ -407,7 +448,8 @@ namespace GameFramework
         /// </summary>
         /// <typeparam name="T">异常类型</typeparam>
         /// <param name="condition">条件表达式</param>
-        public static void Throw<T>(bool condition) where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>(bool condition) where T : Exception
         {
             GameEngine.Debugger.Throw<T>(condition);
         }
@@ -418,7 +460,8 @@ namespace GameFramework
         /// <typeparam name="T">异常类型</typeparam>
         /// <param name="condition">条件表达式</param>
         /// <param name="message">消息内容</param>
-        public static void Throw<T>(bool condition, string message) where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>(bool condition, string message) where T : Exception
         {
             GameEngine.Debugger.Throw<T>(condition, message);
         }
@@ -430,7 +473,8 @@ namespace GameFramework
         /// <param name="condition">条件表达式</param>
         /// <param name="format">格式内容</param>
         /// <param name="args">消息格式化参数</param>
-        public static void Throw<T>(bool condition, string format, params object[] args) where T : System.Exception
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void Throw<T>(bool condition, string format, params object[] args) where T : Exception
         {
             GameEngine.Debugger.Throw<T>(condition, format, args);
         }
