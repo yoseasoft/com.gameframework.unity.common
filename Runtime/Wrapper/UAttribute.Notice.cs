@@ -26,38 +26,38 @@ using System;
 namespace GameFramework
 {
     /// <summary>
-    /// 视图窗口恢复通知声明属性类型定义
+    /// 在视图对象逻辑中，该标签为窗口恢复通知声明的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class UViewResumeAttribute : GameEngine.CViewNoticeCallAttribute
+    public class OnResumeAttribute : GameEngine.CViewNoticeCallAttribute
     {
-        public UViewResumeAttribute() : base(GameEngine.ViewNoticeType.Resume) { }
+        public OnResumeAttribute() : base(GameEngine.ViewNoticeType.Resume) { }
     }
 
     /// <summary>
-    /// 视图窗口暂停通知声明属性类型定义
+    /// 在视图对象逻辑中，该标签为窗口暂停通知声明的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class UViewPauseAttribute : GameEngine.CViewNoticeCallAttribute
+    public class OnPauseAttribute : GameEngine.CViewNoticeCallAttribute
     {
-        public UViewPauseAttribute() : base(GameEngine.ViewNoticeType.Pause) { }
+        public OnPauseAttribute() : base(GameEngine.ViewNoticeType.Pause) { }
     }
 
     /// <summary>
-    /// 视图窗口置顶通知声明属性类型定义
+    /// 在视图对象逻辑中，该标签为窗口置顶通知声明的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class UViewRevealAttribute : GameEngine.CViewNoticeCallAttribute
+    public class OnRevealAttribute : GameEngine.CViewNoticeCallAttribute
     {
-        public UViewRevealAttribute() : base(GameEngine.ViewNoticeType.Reveal) { }
+        public OnRevealAttribute() : base(GameEngine.ViewNoticeType.Reveal) { }
     }
 
     /// <summary>
-    /// 视图窗口遮挡通知声明属性类型定义
+    /// 在视图对象逻辑中，该标签为窗口遮挡通知声明的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
-    public class UViewCoverAttribute : GameEngine.CViewNoticeCallAttribute
+    public class OnCoverAttribute : GameEngine.CViewNoticeCallAttribute
     {
-        public UViewCoverAttribute() : base(GameEngine.ViewNoticeType.Cover) { }
+        public OnCoverAttribute() : base(GameEngine.ViewNoticeType.Cover) { }
     }
 }
