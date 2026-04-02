@@ -28,43 +28,43 @@ namespace GameFramework
     /// 数据同步的目标对象类型启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
-    public sealed class UReplicateObjectAttribute : GameEngine.CReplicateObjectAttribute
+    public sealed class OnReplicateObjectAttribute : GameEngine.CReplicateObjectAttribute
     {
-        public UReplicateObjectAttribute() : base() { }
+        public OnReplicateObjectAttribute() : base() { }
 
-        public UReplicateObjectAttribute(string tag) : base(tag) { }
+        public OnReplicateObjectAttribute(string tag) : base(tag) { }
     }
 
     /// <summary>
     /// 数据同步的目标实体对象唯一标识的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class UReplicateIdAttribute : GameEngine.CReplicateIdAttribute
+    public sealed class OnReplicateIdAttribute : GameEngine.CReplicateIdAttribute
     {
-        public UReplicateIdAttribute() : base() { }
+        public OnReplicateIdAttribute() : base() { }
 
-        public UReplicateIdAttribute(string tag) : base(tag) { }
+        public OnReplicateIdAttribute(string tag) : base(tag) { }
     }
 
     /// <summary>
     /// 数据同步的目标对象字段启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public sealed class UReplicateFieldAttribute : GameEngine.CReplicateFieldAttribute
+    public sealed class OnReplicateFieldAttribute : GameEngine.CReplicateFieldAttribute
     {
-        public UReplicateFieldAttribute() : base() { }
+        public OnReplicateFieldAttribute() : base() { }
 
-        public UReplicateFieldAttribute(string tag) : base(tag) { }
+        public OnReplicateFieldAttribute(string tag) : base(tag) { }
     }
 
     /// <summary>
     /// 数据同步的目标对象属性启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class UReplicatePropertyAttribute : GameEngine.CReplicatePropertyAttribute
+    public sealed class OnReplicatePropertyAttribute : GameEngine.CReplicatePropertyAttribute
     {
-        public UReplicatePropertyAttribute() : base() { }
+        public OnReplicatePropertyAttribute() : base() { }
 
-        public UReplicatePropertyAttribute(string tag) : base(tag) { }
+        public OnReplicatePropertyAttribute(string tag) : base(tag) { }
     }
 }

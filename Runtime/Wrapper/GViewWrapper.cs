@@ -24,9 +24,30 @@
 namespace GameFramework
 {
     /// <summary>
-    /// 业务层二次封装的组件对象类<br/>
+    /// 业务层二次封装的视图对象类
     /// </summary>
-    public abstract class UComponent : GameEngine.CComponent
+    public abstract class GViewWrapper : GameEngine.CView
     {
+        // protected override void OnInitialize() { }
+
+        // protected override void OnStartup() { }
+
+        // protected override void OnAwake() { }
+
+        // protected override void OnStart() { }
+
+        // protected override void OnDestroy() { }
+
+        // protected override void OnShutdown() { }
+
+        // protected override void OnCleanup() { }
+
+        // protected override void OnExecute() { }
+
+        // protected override void OnLateExecute() { }
+
+        // protected override void OnUpdate() { }
+
+        // protected override void OnLateUpdate() { }
     }
 }

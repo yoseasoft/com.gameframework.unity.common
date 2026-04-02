@@ -24,30 +24,9 @@
 namespace GameFramework
 {
     /// <summary>
-    /// 业务层二次封装的场景对象类
+    /// 业务层二次封装的组件对象类<br/>
     /// </summary>
-    public abstract class UScene : GameEngine.CScene
+    public abstract class GComponentWrapper : GameEngine.CComponent
     {
-        // protected override void OnInitialize() { }
-
-        // protected override void OnStartup() { }
-
-        // protected override void OnAwake() { }
-
-        // protected override void OnStart() { }
-
-        // protected override void OnDestroy() { }
-
-        // protected override void OnShutdown() { }
-
-        // protected override void OnCleanup() { }
-
-        // protected override void OnExecute() { }
-
-        // protected override void OnLateExecute() { }
-
-        // protected override void OnUpdate() { }
-
-        // protected override void OnLateUpdate() { }
     }
 }

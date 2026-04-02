@@ -24,9 +24,9 @@
 namespace GameFramework
 {
     /// <summary>
-    /// 业务层二次封装的角色对象类
+    /// 业务层二次封装的原生对象类<br/>
     /// </summary>
-    public abstract class UActor : GameEngine.CActor
+    public abstract class GObjectWrapper : GameEngine.CObject
     {
         // protected override void OnInitialize() { }
 
