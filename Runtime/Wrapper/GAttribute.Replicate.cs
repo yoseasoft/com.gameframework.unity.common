@@ -28,7 +28,7 @@ namespace GameFramework
     /// 数据同步的目标对象类型启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
-    public sealed class OnReplicateObjectAttribute : GameEngine.CReplicateObjectAttribute
+    public sealed class OnReplicateObjectAttribute : GameEngine.CReplicateObjectConfigurationAttribute
     {
         public OnReplicateObjectAttribute() : base() { }
 
@@ -39,7 +39,7 @@ namespace GameFramework
     /// 数据同步的目标实体对象唯一标识的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class OnReplicateIdAttribute : GameEngine.CReplicateIdAttribute
+    public sealed class OnReplicateIdAttribute : GameEngine.CReplicateIdConfigurationAttribute
     {
         public OnReplicateIdAttribute() : base() { }
 
@@ -50,7 +50,7 @@ namespace GameFramework
     /// 数据同步的目标对象字段启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public sealed class OnReplicateFieldAttribute : GameEngine.CReplicateFieldAttribute
+    public sealed class OnReplicateFieldAttribute : GameEngine.CReplicateFieldConfigurationAttribute
     {
         public OnReplicateFieldAttribute() : base() { }
 
@@ -61,7 +61,7 @@ namespace GameFramework
     /// 数据同步的目标对象属性启用标记的属性类型定义
     /// </summary>
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
-    public sealed class OnReplicatePropertyAttribute : GameEngine.CReplicatePropertyAttribute
+    public sealed class OnReplicatePropertyAttribute : GameEngine.CReplicatePropertyConfigurationAttribute
     {
         public OnReplicatePropertyAttribute() : base() { }
 

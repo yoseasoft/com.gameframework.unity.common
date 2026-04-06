@@ -26,7 +26,7 @@ namespace GameFramework
     /// <summary>
     /// 业务层二次封装的角色对象类
     /// </summary>
-    public abstract class GActorWarpper : GameEngine.CActor
+    public abstract class GActorWrapper : GameEngine.CActor
     {
         // protected override void OnInitialize() { }
 
